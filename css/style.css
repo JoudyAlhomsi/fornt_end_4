@@ -1,16 +1,141 @@
-div{
+#testing{
+    /* Box Modiling: */
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+    /* 
+    padding-top
+    padding-right
+    padding-bottom
+    padding-left 
+    padding: (top)25px (right)50px (bottom)75px (left)100px;
+    */
+    border: 15px solid green;    
+    /* border-top: 10px solid #000000; */
+    margin: 20px;
+    /* same as padding */
+    /* Background: */
+    background-color: #EEEEEE;
+    background-image: url("../images/backgrounds/background.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    /* 
+    background-image
+    background-repeat
+    background-attachment
+    background-position 
+    */
+    /* CSS outline: */
+    outline: 2px dashed red;
+    /* TEXT: */
+    color: tomato;
+    /* Fonts: */
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 14px;
+    /* font-size: 2.5em;
+    font-size: 100%;
+    font-size:10vw;
+    font: (style)italic (variant)small-caps (weight)bold (size)12px/(height)30px (family)Georgia, serif;
+    <link rel="stylesheet" <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    */
+    /* DISPLAY: */
+    display: block;
+        /* BLOCK:
+            - <div>
+            - <h1> - <h6>
+            - <p>
+            - <form>
+            - <header>
+            - <footer>
+            - <section>
+        Inline:
+            - <span>
+            - <a>
+            - <img>
+        none. */
+    /* position: */
+    /* static      by default
+    relative    positioned relative to its normal position
+        position: relative;
+        left: 30px;
+    fixed       even if the page is scrolled
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    absolute 
+        position: absolute;
+        top: 80px;
+        right: 0;
+    sticky
+        position: sticky;
+        top: 0;
+         */
+
+
+    /* float: */
+    float:left;
+
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* div{
     font-size: xx-large;
     color: blue;
     background-color: burlywood;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+} */
 /* h1{
     font-size: xx-small;
 }
 h2{
     font-size: x-small;
 } */
-.t1{
+/* .t1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: xx-large;
     color: white;
@@ -21,4 +146,4 @@ h2{
 }
 h3{
     background-color: red;
-}
+} */
