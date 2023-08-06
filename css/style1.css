@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai&family=Lugrasimo&family=Pacifico&display=swap');
+
+/* div{
+    border: 1px solid #000000;
+} */
+body{
+    padding: 0px;
+    margin: 0px;
+}
+#back{
+    height: 600px;
+    border: 1px solid #000000;
+    background-image: url("/images/backgrounds/bg.jpg");
+    background-attachment: fixed;
+}
+#first{
+    width: 400px;
+    height: 400px;
+    /* padding: 20px;
+    margin: 20px;
+    border:20px solid red;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;;
+    outline: 4px solid blue; */
+    background-color: lightgray;
+    
+    border-right: 5px solid green;
+    border: 2px solid red;
+    /* background-image: url("/images/backgrounds/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center; */
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+    font-variant: normal;
+    /* font-family: 'Almarai', sans-serif; */
+    font-family: 'Lugrasimo', cursive;
+    /* font-family: 'Pacifico', cursive; */
+    text-align: center;
+    text-decoration: line-through;
+    text-shadow: white;
+}
+#second{
+    width: 300px;
+    height: 300px;
+    
+}
+#inn{
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+table{
+    border: 1px solid #000000;
+}
+
+
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
