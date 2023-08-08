@@ -100,7 +100,11 @@
     display: block;
   }
 
-
+input:required::after{
+    content: ' * ';
+    color: red;
+    font-size: x-large;
+}
 
 
 

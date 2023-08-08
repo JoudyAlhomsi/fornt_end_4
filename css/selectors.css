@@ -6,11 +6,39 @@ Simple selectors:
 */
 /* 
 Combinators:
+    - , OR
+    - connected (no spaces).
     - space (selector in selector direct child or not).
     - >     (selector in selector only direct child).
     - +     (selector directly after another selector).
     - ~     (selector directly or not after another selector). 
 */
+/* 
+h1, .d1, #i1{
+    color: red;
+    font-size: larger;
+} 
+div.d1{
+    color: brown;
+    font-size: xx-large;
+}
+#i1.d2{
+    color: blue;
+}
+.d1.d3{
+    background-color: blanchedalmond;
+}
+
+div p{
+    background-color: aqua;
+}
+#div1 ~ p{
+    background-color: black;
+    color: white;
+} */
+/* #i1 > .c1 > p{
+    background-color: brown;
+} */
 /* 
 Pseudo-classes: (special state of an element) (:)
     - active:           the active link
@@ -31,7 +59,36 @@ Pseudo-classes: (special state of an element) (:)
     - valid:	        all <input> elements with a valid value
     - visited:	        all visited links 
 */
-
+/* .li1:visited{
+    color: chartreuse;
+}
+.li1:link{
+    color: blanchedalmond;
+    font-size: xx-large;
+}
+input:disabled{
+    background-color: aqua;
+}
+#ddr{
+    border: 1px solid #000000;
+}
+#ddr:hover{
+    background-color: aquamarine;
+}
+input:focus{
+    background-color: red;
+} */
+/* #menu{
+    display: inline-block;
+    background-color: lightgray;
+}
+#sub{
+    border: 1px solid #000000;
+    display: none;
+}
+#menu > p:hover + #sub{
+    display: inline-block;
+} */
 /* 
 Pseudo-elements: (specified parts of an element) (::)
     - after:	        Insert something after the content of each <selector> element
@@ -41,7 +98,28 @@ Pseudo-elements: (specified parts of an element) (::)
     - marker:	        the markers of list items
     - selection:	    the portion of an element that is selected by a user 
 */
-
+/* p::after{
+    content: " * ";
+    color: red;
+}
+p::before{
+    content: " - ";
+    color: aqua;
+} */
+/* p::first-line{
+    color: blue;
+    font-size: xx-large;
+    background-color: blanchedalmond;
+}
+::marker{
+    color: blue;
+    font-size: xx-large;
+    background-color: blanchedalmond;
+} */
+/* p::selection{
+    background-color: bisque;
+    color: blue;
+} */
 /* 
 Attribute Selectors: []
     - [att]:	        all elements with a (att) attribute.
@@ -52,3 +130,18 @@ Attribute Selectors: []
     - [att^=val]:	    all elements with a (att) attribute value begins with "val".
     - [att$=val]:	    all elements with a (att) attribute value end with "val".
 */
+
+input[name$="ser"]{
+    background-color: blanchedalmond;
+}
+
+
+
+
+
+
+
+
+
+
+
